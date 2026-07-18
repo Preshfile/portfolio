@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Precious Potfolio Website</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <!-- Logo -->
+
+        <a href="home.html" class="logo">
+          <span class="logo-icon">
+            <i class="fa-solid fa-code"></i>
+          </span>
+
+          <span class="logo-text"> Precious Ifenofor</span>
+        </a>
+
+        <!-- Navigation -->
+
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="projects.html" class="active">Projects</a></li>
+
+          <li><a href="planner.html">Planner</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+
+        <a href="contact.html" class="btn-nav"> Hire Me </a>
+
+        <!-- Mobile Menu -->
+
+        <div class="hamburger">
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+     
+        <!-- ==========================================
+                PROJECT HERO
+=========================================== -->
+
+<section class="project-hero">
+
+    <div class="container">
+
+        <h1>My Projects</h1>
+
+        <h3>Building Solutions Through Code</h3>
+
+        <p>
+
+            Every project represents an opportunity to
+            learn, solve problems, and improve my skills
+            as a software developer.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+            PROJECT FILTERS
+=========================================== -->
+
+<section class="project-filter">
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active"
+                data-filter="all">
+
+            All
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="frontend">
+
+            Frontend
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="javascript">
+
+            JavaScript
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="academic">
+
+            Academic
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                PROJECT GRID
+=========================================== -->
+
+<section class="projects">
+
+    <div class="projects-grid">
+
+        <!-- ================= PROJECT 1 ================= -->
+
+        <article class="project-card" data-category="frontend">
+
+            <div class="project-image">
+
+                <img src="/images/project_img1.jpg" alt="Portfolio Website">
+
+                <span class="project-badge">Frontend</span>
+
+                <div class="project-overlay">
+
+                    <a href="#" class="overlay-btn">
+                        <i class="fas fa-eye"></i>
+                        Live Demo
+                    </a>
+
+                    <a href="#" class="overlay-btn">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio website built
+                    with HTML, CSS and JavaScript to showcase my
+                    skills, projects and achievements.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- ================= PROJECT 2 ================= -->
+
+        <article class="project-card" data-category="academic">
+
+            <div class="project-image">
+
+                <img src="/images/project_img1.jpg" alt="Student Management System">
+
+                <span class="project-badge">Academic</span>
+
+                <div class="project-overlay">
+
+                    <a href="#" class="overlay-btn">
+                        <i class="fas fa-eye"></i>
+                        Live Demo
+                    </a>
+
+                    <a href="#" class="overlay-btn">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>Student Management System</h3>
+
+                <p>
+                    A dashboard concept designed for managing
+                    student records, attendance, courses and
+                    academic information.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- ================= PROJECT 3 ================= -->
+
+        <article class="project-card" data-category="javascript">
+
+            <div class="project-image">
+
+                <img src="/images/project_img1.jpg" alt="Academic Planner">
+
+                <span class="project-badge">JavaScript</span>
+
+                <div class="project-overlay">
+
+                    <a href="#" class="overlay-btn">
+                        <i class="fas fa-eye"></i>
+                        Live Demo
+                    </a>
+
+                    <a href="#" class="overlay-btn">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>Academic Planner</h3>
+
+                <p>
+                    A task management application that allows
+                    students to organize coursework, deadlines
+                    and completed tasks.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+            PROJECT STATISTICS
+=========================================== -->
+
+<section class="project-stats">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Project Statistics</h2>
+
+            <p>
+                A quick overview of my learning journey,
+                technical growth and achievements.
+            </p>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <!-- Card 1 -->
+
+            <div class="stat-card">
+                <i class="fas fa-code"></i>
+
+                <h3 class="counter" data-target="3">0</h3>
+
+                <p>Projects Completed</p>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="stat-card">
+                <i class="fas fa-laptop-code"></i>
+
+                <h3 class="counter" data-target="12">0</h3>
+
+                <p>Technologies Learned</p>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="stat-card">
+                <i class="fas fa-award"></i>
+
+                <h3 class="counter" data-target="8">0</h3>
+                
+
+                <p>Certificates Earned</p>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="stat-card">
+                <i class="fas fa-mobile-alt"></i>
+
+                <h3 class="counter" data-target="99">0</h3>
+
+                <p>Responsive Design</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ==========================================
+                FOOTER
+=========================================== -->
+
+    <footer>
+        <div class="footer-container">
+            <!-- Column 1 -->
+
+            <div class="footer-about">
+                <h2><span>Precious</span> Ifenofor</h2>
+
+                <p>
+                    Passionate Software Engineering student focused on building responsive
+                    websites, software solutions, and cybersecurity skills for the
+                    future.
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="projects.html">Projects</a></li>
+
+                    <li><a href="planner.html">Planner</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+
+                    preciousifenofor@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+
+                    +234 80000000000
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Nigeria
+                </p>
+            </div>
+
+            <!-- Column 4 -->
+
+            <div class="footer-social">
+                <h3>Connect</h3>
+
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-github"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PRECIOUS IFENOFOR. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

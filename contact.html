@@ -1,207 +1,184 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <title>Precious Potfolio Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <nav class="navbar">
-            <!-- Logo -->
+      <nav class="navbar">
+        <!-- Logo -->
 
-            <a href="index.html" class="logo">
-                <span class="logo-icon">
-                    <i class="fa-solid fa-code"></i>
-                </span>
+        <a href="index.html" class="logo">
+          <span class="logo-icon">
+            <i class="fa-solid fa-code"></i>
+          </span>
 
-                <span class="logo-text"> Precious Ifenofor</span>
-            </a>
+          <span class="logo-text"> Precious Ifenofor</span>
+        </a>
 
-            <!-- Navigation -->
+        <!-- Navigation -->
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
 
-                <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
 
-                <li><a href="projects.html">Projects</a></li>
+          <li><a href="projects.html">Projects</a></li>
 
-                <li><a href="planner.html">Planner</a></li>
+          <li><a href="planner.html">Planner</a></li>
 
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
 
-            <!-- CTA Button -->
+        <!-- CTA Button -->
 
-            <a href="contact.html" class="btn-nav"> Hire Me </a>
+        <a href="contact.html" class="btn-nav"> Hire Me </a>
 
-            <!-- Mobile Menu -->
+        <!-- Mobile Menu -->
 
-            <div class="hamburger">
-                <span></span>
+        <div class="hamburger">
+          <span></span>
 
-                <span></span>
+          <span></span>
 
-                <span></span>
-            </div>
-        </nav>
+          <span></span>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- ==========================================
+      <!-- ==========================================
                 CONTACT HERO
 ========================================== -->
 
-        <section class="contact-hero">
+      <section class="contact-hero">
+        <div class="container">
+          <h1>Contact Me</h1>
 
-            <div class="container">
+          <p>
+            I'd love to hear from you. Whether you have a project, opportunity,
+            or just want to say hello, feel free to send me a message.
+          </p>
+        </div>
+      </section>
 
-                <h1>Contact Me</h1>
-
-                <p>
-
-                    I'd love to hear from you. Whether you have a
-                    project, opportunity, or just want to say hello,
-                    feel free to send me a message.
-
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- ==========================================
+      <!-- ==========================================
                 CONTACT SECTION
 ========================================== -->
 
-        <section class="contact">
+      <section class="contact">
+        <div class="contact-container">
+          <!-- Contact Form -->
 
-            <div class="contact-container">
+          <div class="contact-form">
+            <h2>Send a Message</h2>
 
-                <!-- Contact Form -->
+            <form id="contactForm">
+              <input type="text" id="name" placeholder="Full Name" />
 
-                <div class="contact-form">
+              <small class="error" id="nameError"></small>
 
-                    <h2>Send a Message</h2>
+              <input type="email" id="email" placeholder="Email Address" />
 
-                    <form id="contactForm">
+              <small class="error" id="emailError"></small>
 
-                        <input type="text" id="name" placeholder="Full Name">
+              <input type="text" id="phone" placeholder="Phone Number" />
 
-                        <input type="email" id="email" placeholder="Email Address">
+              <small class="error" id="phoneError"></small>
 
-                        <input type="text" id="phone" placeholder="Phone Number">
+              <textarea
+                id="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
 
-                        <textarea id="message" rows="6" placeholder="Your Message"></textarea>
+              <small class="error" id="messageError"></small>
 
-                        <button type="submit" class="btn-nav" style="border: none;">
+              <button type="submit" class="contact-form button">Send Message</button>
 
-                            Send Message
+              <p id="successMessage"></p>
+            </form>
+          </div>
 
-                        </button>
+          <!-- Contact Information -->
 
-                    </form>
+          <div class="contact-info">
+            <h2>Contact Information</h2>
 
-                </div>
+            <div class="info-box">
+              <i class="fas fa-envelope"></i>
 
-                <!-- Contact Information -->
+              <div>
+                <h4>Email</h4>
 
-                <div class="contact-info">
-
-                    <h2>Contact Information</h2>
-
-                    <div class="info-box">
-
-                        <i class="fas fa-envelope"></i>
-
-                        <div>
-
-                            <h4>Email</h4>
-
-                            <p>preciousifenofor@gmail.com</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-box">
-
-                        <i class="fas fa-phone"></i>
-
-                        <div>
-
-                            <h4>Phone</h4>
-
-                            <p>+234 800000000</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-box">
-
-                        <i class="fas fa-location-dot"></i>
-
-                        <div>
-
-                            <h4>Location</h4>
-
-                            <p>Lagos, Nigeria</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-box">
-
-                        <i class="fab fa-linkedin"></i>
-
-                        <div>
-
-                            <h4>LinkedIn</h4>
-
-                            <a href="#">linkedin.com/in/ifenoforP</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-box">
-
-                        <i class="fab fa-github"></i>
-
-                        <div>
-
-                            <h4>GitHub</h4>
-
-                            <a href="https://github.com/Preshfile">github.com/Preshfile</a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+                <p>preciousifenofor@gmail.com</p>
+              </div>
             </div>
 
-        </section>
+            <div class="info-box">
+              <i class="fas fa-phone"></i>
+
+              <div>
+                <h4>Phone</h4>
+
+                <p>+234 800000000</p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fas fa-location-dot"></i>
+
+              <div>
+                <h4>Location</h4>
+
+                <p>Lagos, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fab fa-linkedin"></i>
+
+              <div>
+                <h4>LinkedIn</h4>
+
+                <a href="#">linkedin.com/in/ifenoforP</a>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fab fa-github"></i>
+
+              <div>
+                <h4>GitHub</h4>
+
+                <a href="https://github.com/Preshfile">github.com/Preshfile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- ==========================================
@@ -209,83 +186,84 @@
 =========================================== -->
 
     <footer>
-        <div class="footer-container">
-            <!-- Column 1 -->
+      <div class="footer-container">
+        <!-- Column 1 -->
 
-            <div class="footer-about">
-                <h2><span>Precious</span> Ifenofor</h2>
+        <div class="footer-about">
+          <h2><span>Precious</span> Ifenofor</h2>
 
-                <p>
-                    Passionate Software Engineering student focused on building responsive
-                    websites, software solutions, and cybersecurity skills for the
-                    future.
-                </p>
-            </div>
-
-            <!-- Column 2 -->
-
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-
-                    <li><a href="about.html">About</a></li>
-
-                    <li><a href="projects.html">Projects</a></li>
-
-                    <li><a href="planner.html">Planner</a></li>
-
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3 -->
-
-            <div class="footer-contact">
-                <h3>Contact</h3>
-
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-
-                    preciousifenofor@gmail.com
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-
-                    +234 80000000000
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    Nigeria
-                </p>
-            </div>
-
-            <!-- Column 4 -->
-
-            <div class="footer-social">
-                <h3>Connect</h3>
-
-                <div class="footer-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                    <a href="#"><i class="fab fa-github"></i></a>
-
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+          <p>
+            Passionate Software Engineering student focused on building
+            responsive websites, software solutions, and cybersecurity skills
+            for the future.
+          </p>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2026 PRECIOUS IFENOFOR. All Rights Reserved.</p>
+        <!-- Column 2 -->
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+            <li><a href="planner.html">Planner</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+
+        <!-- Column 3 -->
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+
+            preciousifenofor@gmail.com
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+
+            +234 80000000000
+          </p>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+
+            Nigeria
+          </p>
+        </div>
+
+        <!-- Column 4 -->
+
+        <div class="footer-social">
+          <h3>Connect</h3>
+
+          <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="#"><i class="fab fa-github"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PRECIOUS IFENOFOR. All Rights Reserved.</p>
+      </div>
     </footer>
-    <script src="js/script.js"></script>
-</body>
 
+    <script src="js/script.js"></script>
+    <script src="js/validation.js"></script>
+  </body>
 </html>
